@@ -1,5 +1,5 @@
 from pyrogram.types import InlineKeyboardButton
-
+import env
 
 class Data:
     generate_single_button = [InlineKeyboardButton("↯︙ انشاء كود بايروجرام .", callback_data="generate")]
@@ -8,7 +8,7 @@ class Data:
 
     buttons = [
         generate_single_button,
-        [InlineKeyboardButton("↯︙المطور .", url="https://t.me/RO_V0"),
+        [InlineKeyboardButton("↯︙المطور .", url=f"https://t.me/{env.DEV}"),
         ],
     ]
 
