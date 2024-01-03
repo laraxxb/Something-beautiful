@@ -147,7 +147,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, is_bot: bo
     except KeyError:
         pass
     await client.disconnect()
-    await bot.send_message(msg.chat.id, "{} تم استخراج جلسة. \n\nتحقق من الرسائل المحفوظة! \n\nBy @q9oebot".format("telethon" if telethon else "pyrogram"))
+    await bot.send_message(msg.chat.id, "{} تم استخراج جلسة. \n\nتحقق من الرسائل المحفوظة! \n\nBy @q9o_e".format("telethon" if telethon else "pyrogram"))
 
 
 async def cancelled(msg):
