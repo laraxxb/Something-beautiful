@@ -9,6 +9,7 @@ BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
 OWNER_ID = list(map(int, os.getenv("OWNER_ID", "").split()))
 DATABASE_URL = os.getenv("DATABASE_URL", "").strip()
 MUST_JOIN = os.getenv("MUST_JOIN", "")
+DEV = os.getenv("DEV", "non")
 
 if not API_ID:
     print("No API_ID found. Exiting...")
